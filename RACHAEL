@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday & Valentine's Day, [Valentine - Racheal]! </title>
+    <style>
+        <body>
+            margin: 0;
+            font=family: 'Segoe UI', sans-serif;
+            background: linear gradient (to bottom, #ffffff, #ffebee); /*White to very soft red/pinkish */
+            color: #c00000; /*Deep red text */
+            overflow: hidden;
+            height: 100vh;
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .container {
+    
+            background: rgba(255, 255, 255, 0.8); /*Semi-transparent white */
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            max-width: 900px;
+        }
+        hl {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #c00000; /*Deep red */}
+            animation: pulse 5s infinite;
+        }
+        @keyframes pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.08); } }
+        p {
+            font-size: 1.8em;
+            color: #333
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .hearts {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+        .hearts {
+            position: absolute;
+            font size: 2.5em
+            animation: float 10s linear infinite;
+            opacity: 0.9;
+            color: #ff0000; /*Bright red hearts*/
+        }
+        @keyframes float {
+            0% { transform: translateY(100vh) rotate(0deg); }
+            100% { transform: translateY(-30vh) roate(720deg); }
+        }
+        button {
+            margin-top: 40px;
+            padding: 18px 40px;
+            font-size: 1.8em;
+            background-color: #c00000; 
+            border: 3px solid white;
+            color: white;
+            border-radius: 60px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        button:hover { background: #ff0000; transform: scale(1.1); }
+    </style>
+</head>
+ </body>
+    <div class="hearts" id="hearts"></div>
+    <div class=""container">
+        <h1>Happy Birthday and Happy Valentine's Day, Racheal!❤️🤍</h1>
+        <p>
+            Born on the best romantic day of the year..... no wonder you are endorsed with beauty and love you need to make live 🤍<br><br>
+            Today Celebrates YOU - the girl who lights up every room with her smile, the one who has a heart as big as the universe, and the soul that shines brighter than any star. <br><br>
+            May this day be filled with laughter, love, and unforgettable moments. May all your dreams come true, and may you continue to inspire everyone around you with your kindness and grace. <br><br>
+            I hope the next celebration will be not only your birthday celebration but of something more special and holds memory🤍<br><br>
+            Love 🤍ya!!!
+        </p>
+        <button onclick="suprise ()">Make my Heart Explode🤍🎂!
+    <div> 
+    
+    <script>
+        // Red floating hearts 
+        function createHeart() {
+            alert("Happy Birthday and Happy Valentine's Day, Racheal!❤️🤍");
+        // Generate floating hearts
+        const heartsContainer = document.getElementById('hearts');
+        setInterval(() => {
+            const heart = document.createElement('div');
+            heart.classList.add('hearts');
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.animationDuration = (Math.random() * 5 + 5) + 's';
+            heart.innerHTML = '❤️';
+            heartsContainer.appendChild(heart);
+            setTimeout(() => { heart.remove(); }, 10000); // Remove after animation
+        }
+        setInterval(createHeart, 1000); // Create a heart every second
+
+        function suprise() {
+            alert("Happy Birthday and Happy Valentine's Day, Racheal!❤️🤍\n\nYou light up the world every day - Racheal!! If you get to these page, you're truly special! you light up the world, and theres somethin i have in mind though)""
+            // optional: Add confetti with canvas-confetti CDN for red/white hearts
+        }   
+    </script>
+</body>
+</html>
